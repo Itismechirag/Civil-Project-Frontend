@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2EFE7;;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.allboxes{
+    display: flex;
+    gap:20px;
+}
+.materialprops{
+    height:fit-content;
+    width:20vw;
+    background: #FEFFFE;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px;
+    position: relative;
+    left: 1vw;
+    margin:10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; 
+}   
+
+.title{
+    color: #000;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /*33px*/
+    letter-spacing: -0.33px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin: 0px auto;
+}
+
+.title span{
+    width: 50%;
+}
+
+
+.title img{
+    height: 90%;
+    width: 30%;
+}
+.materialprops label{
+    font-family: Inter;
+    position: relative;
+}
+
+.materialprops input{
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #DADADA;
+    background: #FFF;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
+    margin-top: 1.5px;
+    padding: 0px 10px;
+}
+
+.unit{
+    color:rgba(108, 117, 125, 1);
+    position:absolute;
+    top:30px;
+    right: 25px;
+    margin:0px;
+    padding: 0px;
+}
+
+.materialprops .elasticity{
+    display: flex;
+    font-size: 150%;
+}
+.materialprops .elasticity input{
+    margin-right: 1px;
+    height: 30px;
+    width:29%;
+    /* margin-top: 0; */
+}
+.materialprops .elasticity span{
+    margin-top: 1.5%;
+}
+
+
+/* .geodet{
+    height: 80vh;
+}
+
+.loaddet{
+    height: 30vh;
+} */
+.envset{
+    margin-top: 50px;
+    /* height: 20vh; */
+}
+
+.envset .title{
+    padding-left: 2px;
+    display: flex;
+    justify-content:left;
+    align-items:center 
+}
+
+.runbox{
+    height: 80vh;
+    width: 25vw;
+    position: relative;
+    left: 3vw;
+    margin:10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.codetype{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: none; */
+    border-radius: 16px;
+    background: #9ACBD0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #2E2E2E;
+    text-align: center;
+    font-family: Inter;
+    font-size:x-large;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 52.5px */
+    letter-spacing: -0.385px;
+}
+
+.codetype button{
+    border: none;
+    height: 70%;
+    width: 30%;
+    border-radius: 16px;
+    background: #9ACBD0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #2E2E2E;
+    text-align: center;
+    font-family: Inter;
+    font-size:x-large;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 52.5px */
+    letter-spacing: -0.385px;
+}
+
+.runner{
+    height: 70%;
+    width: 100%;
+    border-radius: 16px;
+    background: rgba(91, 91, 91, 0.80);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.runneroptions{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.runneroptions button{
+    width: 50%;
+    margin: 0px 4px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #2E2E2E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+}
+
+.finalbuttons{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 15%;
+    margin-top: 15px;
+}
+
+.finalbuttons button img{
+    height: 100%;
+    width : 100%;
+
+}
+
+.finalbuttons button{
+    height: 100%;
+    width: 25%;
+    background-color: transparent;
+    border: none;
+}
+.finalbuttonlabels{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.275px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.output{
+    height: 33%;
+    width: 85%;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.safe{
+    color:rgb(52, 228, 52 );
+    font-size: xxx-large;
+}
+
+.unsafe{
+    color:rgb(228, 52, 52);
+    font-size: xxx-large;
+}
+
+.printpdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 8%;
+    width: 35%;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left:80px
+}
+.printbutton{
+    display: flex;
+}
+
+.printpdf img{
+    height: 100%;
+
+}
+
+
+button:hover{
+    background-color: rgb(62 60 60 / 13%);
+}
+
+.dollar{
+    position: relative;
+    top:-30px;
+    left: -80px;
+}
+
